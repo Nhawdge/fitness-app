@@ -3,7 +3,7 @@
         border-bottom: 1px solid #ddd;
         border-collapse: collapse;
         padding: 5px;
-        font-size: 18px;
+        font-size: 16px;
     }
     th {
         text-align: left;
@@ -19,12 +19,11 @@
         </tr>
         <tr>
           <td>I'm a 
-                <input type="checkbox"> man
-                <input type="checkbox"> woman</td>
+                <input type="radio"> man
+                <input type="radio"> woman</td>
           <td>My age is 
                 <input type="text" style="width:50px"> yrs</td>
           <td>My height is
-                <input type="text" style="width:50px"> ft.
                 <input type="text" style="width:50px"> in.</td>
           <td>My weight is 
                 <input type="text" style="width:70px"> lbs</td>
@@ -32,5 +31,29 @@
     </table>
 
 <h2>Base Metabolic Rate (BMR)</h2>
+Imperial (English) Formulas <br>
+Women: BMR = 655 + (4.35 x weight in pounds) + (4.7 x height in inches) - (4.7 x age in years)
+<br>
+Men: BMR = 66 + (6.23 x weight in pounds) + (12.7 x height in inches) - (6.8 x age in years)
 
 <h2>Total Daily Energy Expenditure (TDEE)</h2>
+TDEE = BMR * Activity Factor <br>
+<table style="width:100%">
+        <tr>
+          <th colspan="4">Activity Level</th>
+        </tr>
+        <tr>
+          <td><input type="radio"> <b>Sedentary</b>
+            <br>Little or no exercise, desk job
+            <br>TDEE = 1.2 x BMR</td>
+          <td><input type="radio"> <b>Lightly Active</b>
+            <br>Light exercise, 1-3 days/wk
+            <br>TDEE = 1.375 x BMR</td>
+          <td><input type="radio"> <b>Moderately Active</b>
+            <br>Moderate exercise, 3-5 days/wk
+            <br>TDEE = 1.55 x BMR</td>
+          <td><input type="radio"> <b>Very Active</b>
+            <br>Heavy exercise, 6-7 days/wk
+            <br>TDEE = 1.725 x BMR</td>
+        </tr>
+    </table>
